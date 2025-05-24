@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    --primary: #5A2FA3;
+    --second: #767678;
+}
+
+.nav {
+    margin: 0 auto;
+    padding: 40px 8%;
+    background-color: white;
+    text-align: center;
+    background: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.788)), url('imgs/LUME-IMG.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.nav h1 {
+    margin: 60px auto 0;
+    width: 95%;
+    font-size: 50px;
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+.nav h3 {
+    width: 70%;
+    margin: 20px auto 0;
+    text-align: center;
+    font-size: 18px;
+    color: var(--second);
+    font-weight: 400;
+}
+
+.btn-head {
+    margin-top: 50px;
+    padding: 20px;
+    width: 300px;
+    border: solid 2px var(--primary);
+    background: none;
+    border-radius: 10px;
+    color: var(--primary);
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-head:hover {
+    transform: scale(1.1);
+}
+
+.divisao {
+    background: var(--primary);
+    width: 100vw;
+    height: 100px;
+}
+
+/* SOBRE */
+
+.sobre {
+    padding: 40px 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    margin: 0 auto;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.sobre h2 {
+    color: var(--primary);
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    color: var(--second);
+}
+
+.info {
+    width: 60%;
+    min-width: 300px;
+}
+
+.img-sobre {
+    min-width: 300px;
+    text-align: center;
+}
+
+/* PORTFÓLIO */
+
+.portifolio {
+    padding: 40px 8%;
+    background: var(--primary);
+}
+
+.portifolio h2 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.portifolio .conteiner {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.portifolio .box {
+    flex: 1 1 250px;
+    max-width: 300px;
+}
+
+.portifolio .box img,
+.portifolio .box video {
+    width: 100%;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+}
+
+.portifolio .box:hover {
+    transform: scale(1.1);
+}
+
+/* LOGOS */
+
+.portifolio-logos {
+    padding: 40px 4%;
+    background: var(--primary);
+}
+
+.portifolio-logos h2 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.portifolio-logos .content {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.portifolio-logos .box-logo img {
+    width: 500px;
+    border: 2px solid white;
+    border-radius: 8px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.portifolio-logos .box-logo:hover {
+    transform: scale(1.05);
+}
+
+/* SERVIÇOS */
+
+.nossos-serviços {
+    padding: 40px 8%;
+    background: white;
+}
+
+.nossos-serviços h2 {
+    text-transform: uppercase;
+    color: var(--primary);
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.nossos-serviços .content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.box-serv {
+    width: 400px;
+    border-radius: 10px;
+    background-color: var(--primary);
+    padding: 30px;
+}
+
+.box-serv h3 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.box-serv p {
+    color: rgb(209, 209, 209);
+}
+
+.box-serv i {
+    color: white;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+/* CONTATO */
+
+.contato {
+    padding: 40px 8%;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 8px;
+}
+
+form input,
+textarea {
+    width: 100%;
+    background-color: var(--second);
+    border: none;
+    outline: none;
+    padding: 20px 15px;
+    border-radius: 6px;
+    color: white;
+}
+
+form textarea {
+    resize: none;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.enviar input {
+    background-color: var(--second);
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 1.08s;
+}
+
+.enviar input:hover {
+    box-shadow: 0 0 8px var(--second);
+    transform: scale(1.08);
+}
+
+.title {
+    text-transform: uppercase;
+    color: var(--second);
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.interface ::placeholder {
+    color: white;
+}
+
+/* RODAPÉ */
+
+footer {
+    padding: 20px 8%;
+    margin-top: 60px;
+    background-color: var(--second);
+}
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.rodape span {
+    color: white;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 1200px) {
+    .nav img {
+        width: 250px;
+    }
+
+    .nav h1 {
+        font-size: 50px;
+        text-align: left;
+    }
+
+    .nav h3 {
+        width: 100%;
+        margin: 15px 10px;
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .img-sobre {
+        display: none;
+    }
+
+    .sobre h2 {
+        font-size: 60px;
+        margin-top: 10px;
+    }
+
+    .sobre p {
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+
+    .conteiner {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 0;
+    }
+
+    .portifolio .box img,
+    .portifolio .box video {
+        height: auto;
+        width: 90vw;
+        max-width: 100%;
+    }
+
+    .portifolio-logos .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portifolio-logos .box-logo img {
+        width: 300px;
+    }
+
+    .portifolio-logos h2 {
+        font-size: 40px;
+    }
+
+    .nossos-serviços .content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .box-serv {
+        width: 300px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+}

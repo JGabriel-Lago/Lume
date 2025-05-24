@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lume - Design</title>
+    <link rel="shortcut icon" href="imgs/LUME LOGO SYMBOL.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!-- LINK GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     <!-- FIM LINK GOOGLE FONTS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- BOOTSTRAP ICONS -->
+</head>
+<body>
+    <div class="nav">
+        <img src="imgs/LUME LOGO.png" alt="logo" width="340px">
+        <h1>Soluções Digitais para sua marca</h1>
+        <h3>
+            Na Lume Studio, desenvolvemos sites modernos e intuitivos, 
+            criamos logomarcas impactantes, posts para story e feed,
+             além de vídeos animados para eventos.
+        </h3>
+        <button class="btn-head" onclick="abrirWhatsapp('orçamento')">Solicite um orçamento</button>
+    </div>
+
+    <div class="divisao">
+
+    </div>
+
+    <div class="sobre">
+        <div class="info">
+        <h2>Sobre a Lume</h2>
+        <p>
+                Na Lume, damos vida à essência da sua marca com soluções criativas, simples e eficientes.
+            Acreditamos que cada negócio tem uma luz própria — nossa missão é fazer ela brilhar.
+            Com um processo ágil e colaborativo, criamos identidades visuais, sites, artes para redes 
+            sociais e campanhas de tráfego pago focadas em resultado.
+            Mais do que design: entregamos estratégia, clareza e presença digital de verdade.
+        </p>
+        </div>
+        <div class="img-sobre">
+            <img src="imgs/LUME LOGO SYMBOL.png" alt="" width="300px">
+        </div>
+    </div>
+    <!-- FIM SOBRE -->
+
+    <div class="portifolio">
+        <h2>Posts para instagram</h2>
+        <div class="conteiner">
+            <div class="box">
+                <img src="imgs/FEED.png" alt="">
+            </div>    
+
+            <div class="box">
+                <img src="imgs/FEED2.png" alt="">
+            </div>
+
+            <div class="box">
+                <img src="imgs/FEED3.png" alt="">
+            </div>
+
+            <div class="box">
+                <video width="300" controls>
+                    <source src="imgs/VÍDEO ATRAÇÕES.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+            </div>
+
+             <div class="box">
+                <video width="300" controls>
+                    <source src="imgs/VÍDEO TRAJETO.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+            </div>
+        </div>
+    </div>
+    <!-- FIM PORTIFOLIO -->
+
+    <div class="portifolio-logos">
+        <h2>logomarcas</h2>
+        <div class="content">
+
+            <div class="box-logo" >
+                <img src="imgs/LOGO PILOTO.png" alt="">
+            </div>
+            
+
+            <div class="box-logo" >
+                <img src="imgs/LOGO THALITA.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- FIM LOGO PORTIFOLIO -->
+
+    <div class="nossos-serviços">
+        <h2>NOSSOS SERVIÇOS</h2>
+        <div class="content">
+            <div class="box-serv">
+                <i class="bi bi-file-post"></i>
+                <h3>Criação de Sites</h3>
+                <p>Desenvolvimento de sites modernos, 
+                    rápidos e responsivos, pensados 
+                    para gerar resultados e fortalecer 
+                    sua presença online.
+                </p>
+            </div>
+
+            <div class="box-serv">
+                <i class="bi bi-palette-fill"></i>
+                <h3>Identidade Visual</h3>
+                <p>
+                    Criação de logotipos, paletas de cores 
+                    e toda a identidade que seu negócio precisa 
+                    para se destacar no mercado.
+                </p>
+            </div>
+
+             <div class="box-serv">
+                <i class="bi bi-laptop"></i>
+                <h3>Landing Pages de Alta Conversão </h3>
+                <p>
+                    Landing Pages estratégicas, 
+                    criadas para capturar leads, 
+                    vender produtos ou serviços 
+                    e maximizar suas campanhas digitais.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- FIM NOSSOS SERVIÇOS -->
+      <section class="contato" id="contato">
+            <div class="interface">
+                <h2 class="title">FAÇA JÁ O SEU ORÇAMENTO!</h2>
+                <form action="#" class="form-contatos" id="formulario" onsubmit="enviarZap(event)">
+                    <input type="text" placeholder="Nome" id="nome">
+                    <textarea name="" id="mensagem" placeholder="Digite sua mensagem..."></textarea>
+                    <div class="enviar">
+                        <input type="button" value="Enviar mensagem via WhatsApp" onclick="abrirWhatsapp('mensagem')">
+                    </div>
+                </form>
+            </div>
+        </section><!--Contato-->
+
+    </main>
+
+    <footer>
+        <div class="interface">
+            <div class="rodape">
+                <img src="imgs/logo02.png" alt="" width="35px">
+                <span>2025 Lume Design | Todos os Direitos Reservados&copy; | Desenvolvido por Gabriel</span>
+            </div>
+        </div>
+    </footer> <!--footer-->
+
+    <script src="script.js"></script>
+</body>
+</html>
